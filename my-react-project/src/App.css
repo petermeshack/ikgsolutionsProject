@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+  background-size: cover;
+  animation-name: backgroundChange; /* Using keyframes for animation */
+  animation-duration: 15s; /* Duration of the animation */
+  animation-iteration-count: infinite; /* Infinite animation loop */
+}
+
+@keyframes backgroundChange {
+  0% {
+    background-image: url('./assets/images/image1.jpg'); /* Initial background image */
+  }
+  25% {
+    background-image: url('./assets/images/image2.jpg'); /* Second background image */
+  }
+  50% {
+    background-image: url('./assets/images/image3.jpg'); /* Third background image */
+  }
+  75% {
+    background-image: url('./assets/images/image4.jpg'); /* Fourth background image */
+  }
+  100% {
+    background-image: url('./assets/images/image5.jpg'); /* Back to the initial image */
+  }
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
